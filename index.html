@@ -2,29 +2,105 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>CAREEREX QUIZ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <h1>Learning JavaScript Basics</h1>
-    <button id="myButton1">EVEN OR ODD CHECKER</button>
-    <button id="myButton2">CALCULATOR</button>
-    <button id="myButton3">VOTING ELIGIBILITY CHECKER</button>
-    <button id="myButton4">1 TO 10 ON CONSOLE</button>
-    <button id="myButton5">MULTIPLICATION TABLE</button>
-    <button id="myButton6">GRADE CHECKER</button>
-    <button id="myButton7">RANDOM NUMBER GUESSER</button>
-    <button id="myButton8">FIZZ BUZZ CHALLENGE</button>
+    <div
+      class="max-w-sm rounded-xl overflow-hidden shadow-lg p-5 bg-[#FFFDD0] mx-auto mt-10"
+    >
+      <!-- INTRODUCTION-->
+      <div class="mt-2">
+        <h1 class="text-xl font-bold">C.R.K Quiz</h1>
+        <p>Question 1 To 3</p>
+      </div>
 
+      <!-- QUESTION 1 -->
+      <div id="question1" class="mt-4">
+        <h3>1. Who betrayed Jesus</h3>
+        <div class="bg-white border p-4">
+          <label>
+            <input type="radio" name="question1" value="Julius" /> Julius </label
+          ><br />
+          <label>
+            <input type="radio" name="question1" value="Judas" /> Judas </label
+          ><br />
+          <label>
+            <input type="radio" name="question1" value="Justice" /> Justice</label
+          ><br />
+        </div>
 
+        <!-- Button -->
+        <div class="mt-4">
+          <button
+            id="nextBtn1"
+            class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+          >
+            Next Question
+          </button>
+        </div>
+      </div>
 
-   <script src="/script1.js"></script>
-   <script src="/script2.js"></script>
-   <script src="/script3.js"></script>
-   <script src="/script4.js"></script>
-   <script src="/script5.js"></script>
-   <script src="/script6.js"></script>
-   <script src="/script7.js"></script>
-   <script src="/script8.js"></script>
+      <!-- QUESTION 2 -->
+      <div id="question2" class="mt-4 hidden">
+        <h3>2. Who was the mother of Jesus?</h3>
+        <div class="bg-white border p-4">
+          <label>
+            <input type="radio" name="question2" value="Mary" /> Mary </label
+          ><br />
+          <label>
+            <input type="radio" name="question2" value="Elizabeth" />
+            Elizabeth</label
+          ><br />
+          <label>
+            <input type="radio" name="question2" value="Uchechi" />
+            Uchechi</label
+          ><br />
+        </div>
 
+        <!-- Button -->
+        <div class="mt-4">
+          <button
+            id="nextBtn2"
+            class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+          >
+            Next Question
+          </button>
+        </div>
+      </div>
+
+      <!-- QUESTION 3 -->
+      <div id="question3" class="mt-4 hidden">
+        <h3>3. Where is Moses from?</h3>
+        <div class="bg-white border p-4">
+          <label>
+            <input type="radio" name="question3" value="egypt" /> Egypt </label
+          ><br />
+          <label>
+            <input type="radio" name="question3" value="Israel" />
+            Israel </label
+          ><br />
+          <label>
+            <input type="radio" name="question3" value="midian" />
+            Midian </label
+          ><br />
+        </div>
+
+        <!-- Button -->
+        <div class="mt-4">
+          <button
+            id="nextBtn3"
+            class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+          >
+            Submit Answers
+          </button>
+        </div>
+      </div>
+      <div
+        id="result"
+        class="mt-4 text-center text-lg font-bold text-green-700 hidden"
+      ></div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
